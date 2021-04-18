@@ -1,0 +1,7 @@
+# Loriol ignore file
+## Folders
+data
+
+## Files
+config.json
+package-lock.json

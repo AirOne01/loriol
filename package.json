@@ -1,0 +1,20 @@
+{
+  "name": "loriol",
+  "version": "1.0.0",
+  "description": "Serveur Web et API REST pour la database du projet Loriol",
+  "main": "index.js",
+  "scripts": {
+    "debug-windows": "npx nodemon -x @powershell -Command $env:DEBUG='loriol:*,loriol';node index.js",
+    "debug-linux": "set DEBUG='loriol:*,loriol' && nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chance": "^1.1.7",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "json-format": "^1.0.1",
+    "supports-color": "^8.1.1"
+  }
+}
