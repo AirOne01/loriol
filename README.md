@@ -1,3 +1,5 @@
+<img src="https://www.ecolelamache.org/wp-content/uploads/2019/10/lamache-logo3.png" alt="Logo Ecole La Mache" title="Ecole La Mache" width="140" height="200"/>
+
 # Projet Loriol
 ### Partie individuelle d'<u>Erwann Lagouche</u>
 ## Description
@@ -17,7 +19,7 @@
    * Sur **Linux**: `./start.sh`
 
 ## TODO
-* ✔️ Faire les scripts de débogage Windows/Linux (*debug.js*)
+* ✔️ ~~Faire les scripts de débogage Windows/Linux (*debug.js*)~~
 * ❌ Eventuellement arrêter d'utiliser *chance*
 * ❌ Enregistrement du mot de passe admin avec *Bcrypt.js*, utilisant le moteur de chiffrage *Bcrypt*
 * ❓ Préparer l'app pour le déploiement
