@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loriol - Connection</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="login.js"></script><!-- For requests -->
+</head>
+<body>
+<div style="width: 20%; transform: translate(-50%, -60%); position: absolute; top: 50%; left: 50%; text-align: center; font-family: Arial, sans-serif">
+    <img src="/logo.png" style="height: 200px; width: 200px">
+    <div class="border-red" style="font-size: 120%; border-top-left-radius: 5px; border-top-right-radius: 5px">
+        Bienvenue sur l'interface du projet Loriol. Veuillez vous connecter.<br/>
+        <form onsubmit="onSubmit(); return false" id="pwdForm">
+            <label for="pwd">Mot de passe administrateur :</label>
+            <input type="password" minlength="8" maxlength="30" id="pwd" style="border: 2px dimgrey solid; border-radius: 4px" required autocomplete="Mot de passe long">
+            <button type="submit" id="pwdSubmit">></button><br/>
+            <label style="font-size: 80%">
+                Rester connecté
+                <input type="checkbox" id="remember" style="margin-bottom: 2%">
+            </label>
+        </form>
+    </div>
+    <div class="border-red" style="border-top: none; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px">
+        <small>Chiffrement du mot de passe avec <em>Bcrypt</em></small>
+    </div>
+</div>
+</body>
+</html>
