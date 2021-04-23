@@ -20,8 +20,11 @@
 
 ## TODO
 * ✔️ ~~Faire les scripts de débogage Windows/Linux (*debug.js*)~~
-* ❌ Eventuellement arrêter d'utiliser *chance*
-* ❌ Enregistrement du mot de passe admin avec *Bcrypt.js*, utilisant le moteur de chiffrage *Bcrypt*
+* ✔️ ~~Arrêter d'utiliser *chance*~~
+* ✔️ ~~Enregistrement du mot de passe admin avec *Bcrypt.js*, utilisant le moteur de chiffrage *Bcrypt*~~
+* ❌ Faire l'interface graphique sur le site
+* ❌ Faire une interface téléphone
+* ❌ Faire une autre repo pour les fichiers Arduino
 * ❓ Préparer l'app pour le déploiement
 * ❌ Eventuellement faire un peu de Typescript
 * ❌ Réfléchir à une licence plus sérieuse que du full-copyright ou copyleft (voir Mozilla ou Creative Commons)

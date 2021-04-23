@@ -1,6 +1,7 @@
 # Loriol ignore file
 ## Folders
 data
+node_modules
 
 ## Files
 config.json
