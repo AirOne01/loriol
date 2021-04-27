@@ -27,9 +27,9 @@ function getCookie() {
 // Requests for a key with a password
 function request(pwd) {
     const url = window.location.origin + '/password';
-    axios({method: 'POST', body: pwd, url: url})
+    axios.post(url, {"password": pwd})
         .then(res => {
-            handleRes(res['data']['key']);
+            handleRes(res['data']['key']);  // Gets the key and sends it to handleRes()
         })
         .catch(err => {
             console.log(err);

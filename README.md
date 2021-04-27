@@ -38,9 +38,10 @@
 **Modules NPM** :
 
 * [axios](https://www.npmjs.com/package/axios): Requêtes HTTP
-* [chance](https://www.npmjs.com/package/chance): Aléatoire avancé
+* [bcryptjs](https://www.npmjs.com/package/bcryptjs): Chiffrage avec *Bcrypt*
 * [debug](https://www.npmjs.com/package/debug): Débogage et verbose
 * [express](https://www.npmjs.com/package/express): Serveur HTTP facilement
+    * [body-parser](https://www.npmjs.com/package/body-parser): Middleware pour récupérer le body. Remplace `express#bodyParser()`, [obsolète](https://github.com/expressjs/body-parser/commit/b7420f8dc5c8b17a277c9e50d72bbaf3086a3900) depuis peu.
 * [json-format](https://www.npmjs.com/package/json-format): Pour que les fichiers de config aient bonne figure
 * [supports-color](https://www.npmjs.com/package/supports-color): Active le support des couleurs pour *debug*
 

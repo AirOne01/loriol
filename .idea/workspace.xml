@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c89b153-253f-4113-bb91-1e3bf5394c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.js" afterDir="false" />
@@ -56,7 +56,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/config.json" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/data/instances.json&#10;D:/USER/Desktop/Dossiers/Loriol/loriol/config.json" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -78,7 +78,11 @@
       <workItem from="1618905921545" duration="6616000" />
       <workItem from="1619109333476" duration="8688000" />
       <workItem from="1619167793046" duration="4816000" />
-      <workItem from="1619196117863" duration="667000" />
+      <workItem from="1619196117863" duration="5131000" />
+      <workItem from="1619256834184" duration="43000" />
+      <workItem from="1619256904185" duration="612000" />
+      <workItem from="1619445651078" duration="1559000" />
+      <workItem from="1619525078592" duration="2844000" />
     </task>
     <servers />
   </component>
@@ -115,5 +119,9 @@
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1618075944788" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1618910999401" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1619525994228">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1619525994228" />
   </component>
 </project>

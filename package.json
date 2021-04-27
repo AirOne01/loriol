@@ -4,8 +4,8 @@
   "description": "Serveur Web et API REST pour la database du projet Loriol",
   "main": "index.js",
   "scripts": {
-    "debug-windows": "npx nodemon -x @powershell -Command $env:DEBUG='loriol:*,loriol';node index.js",
-    "debug-linux": "set DEBUG='loriol:*,loriol' && nodemon index.js"
+    "debug-windows": "npx nodemon --config ./.nodemonignore.json -x @powershell -Command $env:DEBUG='loriol:*,loriol';node index.js",
+    "debug-linux": "set DEBUG='loriol:*,loriol' && nodemon --config ./.nodemonignore.json index.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +13,6 @@
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
     "debug": "^4.3.1",
     "express": "^4.17.1",
     "json-format": "^1.0.1",
