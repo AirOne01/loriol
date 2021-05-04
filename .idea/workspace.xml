@@ -24,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -82,7 +82,9 @@
       <workItem from="1619256834184" duration="43000" />
       <workItem from="1619256904185" duration="612000" />
       <workItem from="1619445651078" duration="1559000" />
-      <workItem from="1619525078592" duration="2844000" />
+      <workItem from="1619525078592" duration="4558000" />
+      <workItem from="1619766297818" duration="1194000" />
+      <workItem from="1619883588763" duration="6496000" />
     </task>
     <servers />
   </component>
@@ -106,6 +108,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618849868419" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1619531313458">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1619531313458" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1619171956261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

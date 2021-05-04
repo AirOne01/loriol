@@ -16,6 +16,7 @@
     "debug": "^4.3.1",
     "express": "^4.17.1",
     "json-format": "^1.0.1",
+    "mysql": "^2.18.1",
     "supports-color": "^8.1.1"
   }
 }
