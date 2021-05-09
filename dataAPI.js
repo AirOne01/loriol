@@ -26,6 +26,7 @@ dataAPI.get('/api/v1/state', (req, res) => {
 dbgS(`Server listening on port ${port}, GET '/api/v1/state'`);
 
 // API 'GET'
+// TODO: Will we even use this?
 dataAPI.get('/api/v1', (req, res) => {
     dbg(`Request from ${req.ip}`);
 })
