@@ -9,6 +9,11 @@ function onSubmit() {
     }
 }
 
+// On focus or password change > blanks the "bad password" text
+function removeError() {
+    document.getElementById('badResText').innerHTML = '';
+}
+
 // Checks for the cookie
 function hasCookie() {
     return document.cookie.includes('key=');
@@ -32,11 +37,17 @@ function request(pwd) {
             handleRes(res['data']['key']);  // Gets the key and sends it to handleRes()
         })
         .catch(err => {
-            console.log(err);
+            if (err.response.status === 401) {
+                document.getElementById('badResText').innerHTML = 'Mot de passe incorrect';
+            } else {
+                document.getElementById('badResText').innerHTML = `Erreur ${err.response.status}. Voir la console du navigateur pour plus de détails`;
+                console.log(err);
+            }
         })
 }
 
 // Handles the response
 function handleRes(key) {
     setCookie(key);
+    window.location.href = '/';
 }

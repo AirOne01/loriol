@@ -30,7 +30,7 @@ webServer.use(cookieParser());
 webServer.use(jsonParser);
 webServer.use((req, res) => {
     // Redirecting
-    if (req.originalUrl === '/' && Object.keys(JSON.parse(req.cookies)).length === 0) {
+    if (req.originalUrl === '/' && Object.keys(req.cookies).length === 0) {
         res.send(`<html lang="en"><body><script>window.location.href="http://${req.hostname}/login"</script></body></html>`);
     } else if (req.originalUrl === '/password') {
         if (checkPassword(req.body["password"])) {
@@ -47,7 +47,6 @@ webServer.use((req, res) => {
             res.send(`{"key":"${id}"}`);
             dbg(`Successfully pushed instances for ${req.ip} to database`);
         } else {
-            // TODO: Add bad password handler (client-side) here
             res.sendStatus(401);
             const date = new Date(Date.now());
             dbg(`${req.ip} tried a wrong password at ${Date.now()} (${date.getMonth() + 1}/${date.getDay()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}''${date.getSeconds()})`);

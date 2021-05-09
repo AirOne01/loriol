@@ -5,3 +5,9 @@
 .border-red {
     border: 3px solid #d77a5d;
 }
+
+#badResText {
+    display:inline;
+    font-size: 80%;
+    color: red;
+}
