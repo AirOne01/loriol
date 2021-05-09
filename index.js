@@ -18,6 +18,7 @@ require('supports-color');      // Color support for 'debug'
 const jsonParser = bodyParser.json();   // Json request body parser
 const webServer = express();    // HTTP Server
 require('./lib/init');          // Initialization task
+require('./lib/periodic')       // Periodic tasks
 require('./dataAPI');           // REST API
 
 // Port
@@ -69,6 +70,7 @@ webServer.use((req, res) => {
         if (fs.existsSync(filePath)) {
             res.sendFile(filePath); // Then gets the file and sends it
         } else {
+            // TODO: Prettier 404 handler
             res.sendStatus(404);    // Sends 404
         }
     }
@@ -88,13 +90,13 @@ db = mysql.createConnection({
 db.connect(err => {
     if (err) throw err;
     /*
-    db.query(`SELECT * FROM instances`, (err, result) => {
+    db.query(`SELECT * FROM instances;`, (err, result) => {
         if (err) throw err;
         dbg(`DB dump: ${JSON.stringify(result)}`);
     });
     */
     // TODO: Remove this debugging
-    db.query(`SELECT * FROM instances WHERE id = 320326`, (err, result) => {
+    db.query(`SELECT * FROM instances WHERE id = 320326;`, (err, result) => {
         if (err) throw err;
         dbg((result.length !== 0) ? result[0] : "nope");
     })
@@ -115,7 +117,7 @@ function newInstance(ip, id) {
      */
 
     // Pushes to the database
-    db.query(`INSERT INTO instances (id, timestamp, origin) VALUES (${id}, ${Date.now()}, "${ip}")`, (err, result) => {
+    db.query(`INSERT INTO instances (id, timestamp, origin) VALUES (${id}, ${Date.now()}, "${ip}");`, (err, result) => {
         // Database table "instances"
         // +-----------+------------------+------+-----+---------+-------+
         // | Field     | Type             | Null | Key | Default | Extra |

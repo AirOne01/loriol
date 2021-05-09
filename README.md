@@ -39,6 +39,7 @@
 
 * [axios](https://www.npmjs.com/package/axios): Requêtes HTTP
 * [bcryptjs](https://www.npmjs.com/package/bcryptjs): Chiffrage avec *Bcrypt*
+* [cron](https://www.npmjs.com/package.cron): Tâches périodiques (récupération et stockage de données)
 * [debug](https://www.npmjs.com/package/debug): Débogage et verbose
 * [express](https://www.npmjs.com/package/express): Serveur HTTP facilement
     * [cookie-parser](https://www.npmjs.com/package/cookie-parser): Middleware pour récupérer les cookies.
