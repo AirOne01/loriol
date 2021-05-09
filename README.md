@@ -22,10 +22,10 @@
 * ✔️ ~~Faire les scripts de débogage Windows/Linux (*debug.js*)~~
 * ✔️ ~~Arrêter d'utiliser *chance*~~
 * ✔️ ~~Enregistrement du mot de passe admin avec *Bcrypt.js*, utilisant le moteur de chiffrage *Bcrypt*~~
+* ✔ ~~Faire une autre repo pour les fichiers Arduino~~ Voir [github/AirOne01/loriol-arduino](https://github.com/AirOne01/loriol-arduino)
 * ❓ Préparer l'app pour le déploiement
 * ❌ Eventuellement faire un peu de Typescript
 * ❌ Faire l'interface graphique sur le site
-* ❌ Faire une autre repo pour les fichiers Arduino
 * ❌ Faire une interface téléphone
 * ❌ Réfléchir à une licence plus sérieuse que du full-copyright ou copyleft (voir Mozilla ou Creative Commons)
 ###### Légende: ✔ *OK*, ❓ *En cours*, ❌ *À faire*
@@ -41,6 +41,7 @@
 * [bcryptjs](https://www.npmjs.com/package/bcryptjs): Chiffrage avec *Bcrypt*
 * [debug](https://www.npmjs.com/package/debug): Débogage et verbose
 * [express](https://www.npmjs.com/package/express): Serveur HTTP facilement
+    * [cookie-parser](https://www.npmjs.com/package/cookie-parser): Middleware pour récupérer les cookies.
     * [body-parser](https://www.npmjs.com/package/body-parser): Middleware pour récupérer le body. Remplace `express#bodyParser()`, [obsolète](https://github.com/expressjs/body-parser/commit/b7420f8dc5c8b17a277c9e50d72bbaf3086a3900) depuis peu.
 * [json-format](https://www.npmjs.com/package/json-format): Pour que les fichiers de config aient bonne figure
 * [mysql](https://www.npmjs.com/package/mysql): Pour intérragir avec mysql
