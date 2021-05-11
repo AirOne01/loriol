@@ -1,4 +1,4 @@
-<img src="https://www.ecolelamache.org/wp-content/uploads/2019/10/lamache-logo3.png" alt="Logo Ecole La Mache" title="Ecole La Mache" width="140" height="200"/>
+<img src="https://file.diplomeo-static.com/file/00/00/01/46/14677.svg" alt="Logo Ecole La Mache" title="Ecole La Mache" height="100"/>
 
 # Projet Loriol
 ### Partie individuelle d'<u>Erwann Lagouche</u>
@@ -22,12 +22,14 @@
 * ✔️ ~~Faire les scripts de débogage Windows/Linux (*debug.js*)~~
 * ✔️ ~~Arrêter d'utiliser *chance*~~
 * ✔️ ~~Enregistrement du mot de passe admin avec *Bcrypt.js*, utilisant le moteur de chiffrage *Bcrypt*~~
-* ✔ ~~Faire une autre repo pour les fichiers Arduino~~ Voir [github/AirOne01/loriol-arduino](https://github.com/AirOne01/loriol-arduino)
-* ❓ Préparer l'app pour le déploiement
-* ❌ Eventuellement faire un peu de Typescript
+* ✔️ ~~Faire une autre repo pour les fichiers Arduino~~ Voir [github/AirOne01/loriol-arduino](https://github.com/AirOne01/loriol-arduino)
+* ✔️ ~~Préparer l'app pour le déploiement~~
 * ❌ Faire l'interface graphique sur le site
 * ❌ Faire une interface téléphone
 * ❌ Réfléchir à une licence plus sérieuse que du full-copyright ou copyleft (voir Mozilla ou Creative Commons)
+* ❌ Utiliser une librarie comme [Plotly](https://plotly.com/nodejs/) pour afficher des graphiques récapitulatifs
+* ❌ Communiquer avec l'API météoroilogique et stocker ses données
+* ❌ Communiquer avec l'arduino pour controller la pompe régulièrement
 ###### Légende: ✔ *OK*, ❓ *En cours*, ❌ *À faire*
 
 ## Dépendances
