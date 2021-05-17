@@ -9,7 +9,6 @@ const debug = require('debug');
 const dbg = debug('loriol').extend('http');
 const express = require('express');
 const fs = require('fs');
-const jsonFormat = require('json-format');
 const mysql = require('mysql');
 const path = require('path');
 require('supports-color');      // Color support for 'debug'
@@ -20,6 +19,8 @@ const webServer = express();    // HTTP Server
 require('./lib/init');          // Initialization task
 require('./lib/periodic')       // Periodic tasks
 require('./dataAPI');           // REST API
+
+require('./lib/callWeather')();
 
 // Port
 const port = process.env.PORT || 80; // Web server port
@@ -88,18 +89,14 @@ db = mysql.createConnection({
     database: opts['database']['database']
 });
 db.connect(err => {
-    if (err) throw err;
+    if (err) dbg(err.message);
     /*
     db.query(`SELECT * FROM instances;`, (err, result) => {
         if (err) throw err;
         dbg(`DB dump: ${JSON.stringify(result)}`);
     });
     */
-    // TODO: Remove this debugging
-    db.query(`SELECT * FROM instances WHERE id = 320326;`, (err, result) => {
-        if (err) throw err;
-        dbg((result.length !== 0) ? result[0] : "nope");
-    })
+    // TODO: here, this is assuming that everything will be done after connecting. NOT ALWAYS THE CASE; TO CHANGE !
 })
 
 // Checks if the password is corresponds with the hash
@@ -126,7 +123,7 @@ function newInstance(ip, id) {
         // | origin    | text             | NO   |     | NULL    |       |
         // | timestamp | bigint(20)       | NO   |     | NULL    |       |
         // +-----------+------------------+------+-----+---------+-------+
-        if (err) throw err;
+        if (err) dbg(err.message + " < couldn't push to the database");
         dbg('Insert result: ' + JSON.stringify(result));
     })
     db.end();

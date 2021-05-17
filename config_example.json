@@ -7,5 +7,6 @@
     "database": "your_db_name_not_table_name"
   },
   "password": "Sup€rS€cÛreBeàcon",
-  "sensorIp": "192.168.0.42:80"
+  "sensorIp": "192.168.0.42:80",
+  "weatherKey": "2014334c5e8b9dc43167a36800117a75"
 }
