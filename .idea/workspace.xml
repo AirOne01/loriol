@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,14 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c89b153-253f-4113-bb91-1e3bf5394c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nodemonignore.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nodemonignore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_example.json" beforeDir="false" afterPath="$PROJECT_DIR$/config_example.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/callWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/callWeather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/periodic.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/periodic.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +69,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/data/instances.json&#10;D:/USER/Desktop/Dossiers/Loriol/loriol/config.json" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.17.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.45" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.4" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.0" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -106,6 +106,7 @@
       <workItem from="1620411155965" duration="593000" />
       <workItem from="1620585149888" duration="10564000" />
       <workItem from="1621250465910" duration="4682000" />
+      <workItem from="1621576447107" duration="3820000" />
     </task>
     <servers />
   </component>

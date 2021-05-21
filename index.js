@@ -20,8 +20,6 @@ require('./lib/init');          // Initialization task
 require('./lib/periodic')       // Periodic tasks
 require('./dataAPI');           // REST API
 
-require('./lib/callWeather')();
-
 // Port
 const port = process.env.PORT || 80; // Web server port
 
@@ -98,6 +96,7 @@ db.connect(err => {
     */
     // TODO: here, this is assuming that everything will be done after connecting. NOT ALWAYS THE CASE; TO CHANGE !
 })
+require('./lib/callWeather')(db);   // Calls the weather api
 
 // Checks if the password is corresponds with the hash
 function checkPassword(pwd) {
