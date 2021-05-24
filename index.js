@@ -9,7 +9,6 @@ const debug = require('debug');
 const dbg = debug('loriol').extend('http');
 const express = require('express');
 const fs = require('fs');
-const jsonFormat = require('json-format');
 const mysql = require('mysql');
 const path = require('path');
 require('supports-color');      // Color support for 'debug'
@@ -89,6 +88,25 @@ dbg(`Server listening on port ${port}, '/'`);
 // Server starts
 webServer.listen(port);
 
+// Database declaration
+db = mysql.createConnection({
+    host: opts['database']['host'],
+    user: opts['database']['user'],
+    password: opts['database']['password'],
+    database: opts['database']['database']
+});
+db.connect(err => {
+    if (err) dbg(err.message);
+    /*
+    db.query(`SELECT * FROM instances;`, (err, result) => {
+        if (err) throw err;
+        dbg(`DB dump: ${JSON.stringify(result)}`);
+    });
+    */
+    // TODO: here, this is assuming that everything will be done after connecting. NOT ALWAYS THE CASE; TO CHANGE !
+})
+require('./lib/callWeather')(db);   // Calls the weather api
+
 // Checks if the password is corresponds with the hash
 function checkPassword(pwd) {
     return bcrypt.compareSync(pwd, require('./config.json')['key']);
@@ -99,14 +117,13 @@ function newInstance(ip, id) {
     // Pushes to the database
     db.query(`INSERT INTO instances (id, origin) VALUES (${id}, "${ip}");`, (err, result) => {
         // Database table "instances"
-        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
-        // | Field     | Type                 | Null | Key | Default             | Extra                         |
-        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
-        // | id        | smallint(5) unsigned | NO   |     | NULL                |                               |
-        // | origin    | varchar(39)          | NO   |     | NULL                |                               |
-        // | timestamp | timestamp            | NO   |     | current_timestamp() | on update current_timestamp() |
-        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
-        if (err) throw err;
+        // +-----------+------------------+------+-----+---------+-------+
+        // | Field     | Type             | Null | Key | Default | Extra |
+        // +-----------+------------------+------+-----+---------+-------+
+        // | id        | int(10) unsigned | NO   |     | NULL    |       |
+        // | origin    | text             | NO   |     | NULL    |       |
+        // | timestamp | bigint(20)       | NO   |     | NULL    |       |
+        // +-----------+------------------+------+-----+---------+-------+
         dbg('Insert result: ' + JSON.stringify(result));
     });
 }
