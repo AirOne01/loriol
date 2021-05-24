@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c89b153-253f-4113-bb91-1e3bf5394c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/periodic.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/periodic.js" afterDir="false" />
-    </list>
+    <list default="true" id="9c89b153-253f-4113-bb91-1e3bf5394c03" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +86,7 @@
       <workItem from="1620585149888" duration="10799000" />
       <workItem from="1620657937685" duration="5599000" />
       <workItem from="1621199123083" duration="1813000" />
+      <workItem from="1621862126154" duration="382000" />
     </task>
     <servers />
   </component>
