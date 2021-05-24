@@ -17,15 +17,25 @@ require('supports-color');      // Color support for 'debug'
 // Declarations
 const jsonParser = bodyParser.json();   // Json request body parser
 const webServer = express();    // HTTP Server
-require('./lib/init');          // Initialization task
+
+// Static options
+const opts = require('./config.json');
+
+// Database declaration
+db = mysql.createConnection({
+    host: opts['database']['host'],
+    user: opts['database']['user'],
+    password: opts['database']['password'],
+    database: opts['database']['database']
+});
+
+// Initialization
+require('./lib/init')(db);      // Initialization task
 require('./lib/periodic')       // Periodic tasks
 require('./dataAPI');           // REST API
 
 // Port
 const port = process.env.PORT || 80; // Web server port
-
-// Static options
-const opts = require('./config.json');
 
 webServer.use(cookieParser());
 webServer.use(jsonParser);
@@ -39,7 +49,7 @@ webServer.use((req, res) => {
             dbg(`${req.ip} connected at ${Date.now()} (${date.getMonth() + 1}/${date.getDay()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}''${date.getSeconds()})`);
             // ^ Adding one to the month because month convention is -1 by default (starting with zero)
 
-            const id = Math.floor(Math.random() * 1000000); // Creates random id
+            const id = Math.floor(Math.random() * 65535);   // Creates random id
 
             // Adds instance to db
             newInstance(req.ip, id)
@@ -70,7 +80,6 @@ webServer.use((req, res) => {
         if (fs.existsSync(filePath)) {
             res.sendFile(filePath); // Then gets the file and sends it
         } else {
-            // TODO: Prettier 404 handler
             res.sendStatus(404);    // Sends 404
         }
     }
@@ -80,28 +89,6 @@ dbg(`Server listening on port ${port}, '/'`);
 // Server starts
 webServer.listen(port);
 
-// Database declaration
-db = mysql.createConnection({
-    host: opts['database']['host'],
-    user: opts['database']['user'],
-    password: opts['database']['password'],
-    database: opts['database']['database']
-});
-db.connect(err => {
-    if (err) throw err;
-    /*
-    db.query(`SELECT * FROM instances;`, (err, result) => {
-        if (err) throw err;
-        dbg(`DB dump: ${JSON.stringify(result)}`);
-    });
-    */
-    // TODO: Remove this debugging
-    db.query(`SELECT * FROM instances WHERE id = 320326;`, (err, result) => {
-        if (err) throw err;
-        dbg((result.length !== 0) ? result[0] : "nope");
-    })
-})
-
 // Checks if the password is corresponds with the hash
 function checkPassword(pwd) {
     return bcrypt.compareSync(pwd, require('./config.json')['key']);
@@ -109,25 +96,17 @@ function checkPassword(pwd) {
 
 // Makes a new instance and store it
 function newInstance(ip, id) {
-    /* Old database program
-    const data = fs.readFileSync('./data/instances.json', 'utf8');  // Gets data
-    const obj = JSON.parse(data);   // Gets instances file as obj
-    obj['table'].push({"id": id, "timestamp": Date.now(), "origin": ip});   // Adds it as an object with timestamp
-    fs.writeFileSync('./data/instances.json', jsonFormat(obj)); // Writes
-     */
-
     // Pushes to the database
-    db.query(`INSERT INTO instances (id, timestamp, origin) VALUES (${id}, ${Date.now()}, "${ip}");`, (err, result) => {
+    db.query(`INSERT INTO instances (id, origin) VALUES (${id}, "${ip}");`, (err, result) => {
         // Database table "instances"
-        // +-----------+------------------+------+-----+---------+-------+
-        // | Field     | Type             | Null | Key | Default | Extra |
-        // +-----------+------------------+------+-----+---------+-------+
-        // | id        | int(10) unsigned | NO   |     | NULL    |       |
-        // | origin    | text             | NO   |     | NULL    |       |
-        // | timestamp | bigint(20)       | NO   |     | NULL    |       |
-        // +-----------+------------------+------+-----+---------+-------+
+        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
+        // | Field     | Type                 | Null | Key | Default             | Extra                         |
+        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
+        // | id        | smallint(5) unsigned | NO   |     | NULL                |                               |
+        // | origin    | varchar(39)          | NO   |     | NULL                |                               |
+        // | timestamp | timestamp            | NO   |     | current_timestamp() | on update current_timestamp() |
+        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
         if (err) throw err;
         dbg('Insert result: ' + JSON.stringify(result));
-    })
-    db.end();
+    });
 }
