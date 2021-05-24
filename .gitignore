@@ -1,4 +1,8 @@
-# Loriol ignore file
+# Loriol git ignored files
+# JetBrains
+**/.idea/workspace.wml
+**/.idea/tasks.wml
+
 ## Folders
 data
 node_modules
