@@ -17,7 +17,7 @@
 * Lancez le script correspondant à votre OS.
    * Sur **Windows**: `powershell start.bat`, ou double-cliquez simplement *start.bat*
    * Sur **Linux**: `./start.sh`
-
+   
 ## TODO
 * ✔️ ~~Faire les scripts de débogage Windows/Linux (*debug.js*)~~
 * ✔️ ~~Arrêter d'utiliser *chance*~~
@@ -34,11 +34,9 @@
 
 ## Dépendances
 **Moteur** :
-
 * [Node.js](https://nodejs.org/fr/) (utilise [Chromium](https://fr.wikipedia.org/wiki/Chromium), programmation en Javascript et/ou Typescript)
 
 **Modules NPM** :
-
 * [axios](https://www.npmjs.com/package/axios): Requêtes HTTP
 * [bcryptjs](https://www.npmjs.com/package/bcryptjs): Chiffrage avec *Bcrypt*
 * [cron](https://www.npmjs.com/package.cron): Tâches périodiques (récupération et stockage de données)
@@ -47,7 +45,7 @@
     * [cookie-parser](https://www.npmjs.com/package/cookie-parser): Middleware pour récupérer les cookies.
     * [body-parser](https://www.npmjs.com/package/body-parser): Middleware pour récupérer le body. Remplace `express#bodyParser()`, [obsolète](https://github.com/expressjs/body-parser/commit/b7420f8dc5c8b17a277c9e50d72bbaf3086a3900) depuis peu.
 * [json-format](https://www.npmjs.com/package/json-format): Pour que les fichiers de config aient bonne figure
-* [mysql](https://www.npmjs.com/package/mysql): Pour intérragir avec mysql
+* [mysql](https://www.npmjs.com/package/mysql): Pour interagir avec mysql
 * [supports-color](https://www.npmjs.com/package/supports-color): Active le support des couleurs pour *debug*
 
 ## Licence
