@@ -105,7 +105,7 @@ db.connect(err => {
     */
     // TODO: here, this is assuming that everything will be done after connecting. NOT ALWAYS THE CASE; TO CHANGE !
 })
-require('./lib/callWeather')(db);   // Calls the weather api
+require('./lib/callWeather')['weather'](db);   // Calls the weather api
 
 // Checks if the password is corresponds with the hash
 function checkPassword(pwd) {
@@ -117,13 +117,13 @@ function newInstance(ip, id) {
     // Pushes to the database
     db.query(`INSERT INTO instances (id, origin) VALUES (${id}, "${ip}");`, (err, result) => {
         // Database table "instances"
-        // +-----------+------------------+------+-----+---------+-------+
-        // | Field     | Type             | Null | Key | Default | Extra |
-        // +-----------+------------------+------+-----+---------+-------+
-        // | id        | int(10) unsigned | NO   |     | NULL    |       |
-        // | origin    | text             | NO   |     | NULL    |       |
-        // | timestamp | bigint(20)       | NO   |     | NULL    |       |
-        // +-----------+------------------+------+-----+---------+-------+
+        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
+        // | Field     | Type                 | Null | Key | Default             | Extra                         |
+        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
+        // | id        | smallint(5) unsigned | NO   |     | NULL                |                               |
+        // | origin    | varchar(39)          | NO   |     | NULL                |                               |
+        // | timestamp | timestamp            | NO   |     | current_timestamp() | on update current_timestamp() |
+        // +-----------+----------------------+------+-----+---------------------+-------------------------------+
         dbg('Insert result: ' + JSON.stringify(result));
     });
 }

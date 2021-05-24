@@ -24,12 +24,14 @@
 * ✔️ ~~Enregistrement du mot de passe admin avec *Bcrypt.js*, utilisant le moteur de chiffrage *Bcrypt*~~
 * ✔️ ~~Faire une autre repo pour les fichiers Arduino~~ Voir [github/AirOne01/loriol-arduino](https://github.com/AirOne01/loriol-arduino)
 * ✔️ ~~Préparer l'app pour le déploiement~~
+* ✔ ~~Communiquer avec l'API météorologique et stocker ses données~~
 * ❌ Faire l'interface graphique sur le site
 * ❌ Faire une interface téléphone
 * ❌ Réfléchir à une licence plus sérieuse que du full-copyright ou copyleft (voir Mozilla ou Creative Commons)
-* ❌ Utiliser une librarie comme [Plotly](https://plotly.com/nodejs/) pour afficher des graphiques récapitulatifs
-* ❌ Communiquer avec l'API météoroilogique et stocker ses données
-* ❌ Communiquer avec l'arduino pour controller la pompe régulièrement
+* ❌ Utiliser une librairie comme [Plotly](https://plotly.com/nodejs/) pour afficher des graphiques récapitulatifs
+* ❌ Communiquer avec l'Arduino pour controller la pompe régulièrement
+* ❌ Récupérer les données météo manquées avec l'API
+* ❌ Ajouter plus de couleurs aux messages d'erreurs
 ###### Légende: ✔ *OK*, ❓ *En cours*, ❌ *À faire*
 
 ## Dépendances
