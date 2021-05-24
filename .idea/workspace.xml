@@ -23,13 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c89b153-253f-4113-bb91-1e3bf5394c03" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nodemonignore.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nodemonignore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/callWeather.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/callWeather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/periodic.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/periodic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -109,7 +106,7 @@
       <workItem from="1620585149888" duration="10564000" />
       <workItem from="1621250465910" duration="4682000" />
       <workItem from="1621576447107" duration="3820000" />
-      <workItem from="1621867811754" duration="3053000" />
+      <workItem from="1621867811754" duration="4734000" />
     </task>
     <servers />
   </component>
@@ -145,6 +142,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1621867787565" />
+    <state x="667" y="76" width="585" height="888" key="find.popup" timestamp="1621873039882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="76" width="585" height="888" key="find.popup/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1621873039882" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621872776230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

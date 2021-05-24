@@ -67,7 +67,8 @@ webServer.use((req, res) => {
             res.send('<html><h1>Erreur 401 (oula!)</h1><br/>Vos cookies sont invalides.<br/>Veuillez les supprimer, vider le cache du navigateur ou relancer cette page en navigation privée.</html>')
         } else {
             // TODO: Actually handle good connections here
-            res.send(`<html>Connecté avec la clé "<em>${req.cookies['key']}</em>"<br/>Cookies: "<em>${JSON.stringify(req.cookies)}</em>"</html>`)
+            res.sendFile(path.resolve(__dirname, './web/dashboard.html'));
+            //res.send(`<html>Connecté avec la clé "<em>${req.cookies['key']}</em>"<br/>Cookies: "<em>${JSON.stringify(req.cookies)}</em>"</html>`)
         }
     } else {
         // Sending the appropriate file
@@ -124,6 +125,5 @@ function newInstance(ip, id) {
         // | origin    | varchar(39)          | NO   |     | NULL                |                               |
         // | timestamp | timestamp            | NO   |     | current_timestamp() | on update current_timestamp() |
         // +-----------+----------------------+------+-----+---------------------+-------------------------------+
-        dbg('Insert result: ' + JSON.stringify(result));
     });
 }
