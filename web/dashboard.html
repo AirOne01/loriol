@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" style="border: 5px solid red">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Loriol - Récapitulatif</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
-<body>
-    <div style="height: 100%">test</div>
+<body style="font-family: arial">
+	<div id="top_part" style="overflow: hidden;">
+		<div style="float: left; width: 29%; border-right: solid 3px #ff441f; border-bottom: solid 3px #ff441f">
+			<!--- Top left --->
+    		<h1 style="font-variant: small-caps;">Tableau de bord</h1>
+    		<p><b>Identifiant</b>: #connectionId#
+    		<br><b>Adresse</b>: #connectionOrigin#
+    		<br><b>Timestamp</b>: #connectionTimestamp#</p>
+    	</div>
+    	<div style="float: right; width: 70%">
+    		<!--- Top right --->
+    		<table style="border-collapse: collapse;">
+    			<thead>
+    				<tr>
+    					<td>#title_d-6#</td>
+    					<td>#title_d-5#</td>
+    					<td>#title_d-4#</td>
+    					<td>#title_d-3#</td>
+    					<td>#title_d-2#</td>
+    					<td>#title_d-1#</td>
+    					<td>#title_d#</td>
+    				</tr>
+    			</thead>
+    			<tbody>
+    				<tr>
+    					<td>1</td>
+    					<td>2</td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    </div>
+    <div id="bottom_part">
+    	<div style="float: left; width: 50%">
+    		<!--- Bottom left --->
+    	</div>
+    	<div style="float: right; width: 50%; background: linear-gradient(to right, #ff3300 0%, #cc0099 100%)">
+    		<!--- Bottom right --->
+    		<div style="height: 50px; width: 50px; background-color: white; margin: 10px"></div>
+    	</div>
+    </div>
 </body>
 </html>

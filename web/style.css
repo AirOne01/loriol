@@ -6,6 +6,10 @@
     border: 3px solid #d77a5d;
 }
 
+.border-red2 {
+    border: 3px solid #ff441f;
+}
+
 #badResText {
     display:inline;
     font-size: 80%;
