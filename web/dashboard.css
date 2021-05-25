@@ -1,9 +1,10 @@
 html {
     border: 5px solid #ff441f;
-    height: 98.5%;
+    height: 99%;
 }
 
 th, td {
-	border: 1px solid black;
+	border: 2px solid #d77a5d;
 	border-collapse: collapse;
+	text-align: center;
 }
