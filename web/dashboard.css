@@ -18,3 +18,23 @@ th, td {
 	border-collapse: collapse;
 	text-align: center;
 }
+
+table {
+	border-collapse: collapse;
+}
+
+.border-top td {
+	border-top: 3px solid black;
+}
+
+.border-bottom td {
+	border-bottom: 3px solid black;
+}
+
+.border-left {
+	border-left: 3px solid black;
+}
+
+.border-right {
+	border-right: 3px solid black;
+}

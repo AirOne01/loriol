@@ -7,103 +7,119 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-	<div id="top_part" style="overflow: hidden;">
-		<div style="float: left; width: 29%; border-right: solid 3px #ff441f; border-bottom: solid 3px #ff441f">
-			<!--- Top left --->
-    		<h1 style="font-variant: small-caps;">Tableau de bord</h1>
-    		<p><b>Identifiant</b>: #connectionId#
-    		<br><b>Adresse</b>: #connectionOrigin#
-    		<br><b>Timestamp</b>: #connectionTimestamp#</p>
-    	</div>
-    	<div style="float: right; width: 70%">
-    		<!--- Top right --->
-    		<table style="border-collapse: collapse; width: 93%; height: 100%; margin: 2%">
-    			<thead>
-    				<tr style="font-weight: bold">
-    					<td> </td>
-    					<td>#title_d-6#</td>
-    					<td>#title_d-5#</td>
-    					<td>#title_d-4#</td>
-    					<td>#title_d-3#</td>
-    					<td>#title_d-2#</td>
-    					<td>#title_d-1#</td>
-    					<td>#title_d#</td>
-    				</tr>
-    			</thead>
-    			<tbody>
-    				<tr>
-    					<td><b>Capteur 1</b></td>
-    					<td>#value_d-6_1#</td>
-    					<td>#value_d-5_1#</td>
-    					<td>#value_d-4_1#</td>
-    					<td>#value_d-3_1#</td>
-    					<td>#value_d-2_1#</td>
-    					<td>#value_d-1_1#</td>
-    					<td>#value_d_1#</td>
-    				</tr>
-    				<tr>
-    					<td><b>Capteur 2</b></td>
-    					<td>#value_d-6_2#</td>
-    					<td>#value_d-5_2#</td>
-    					<td>#value_d-4_2#</td>
-    					<td>#value_d-3_2#</td>
-    					<td>#value_d-2_2#</td>
-    					<td>#value_d-1_2#</td>
-    					<td>#value_d_2#</td>
-    				</tr>
-    				<tr>
-    					<td><b>Capteur 3</b></td>
-    					<td>#value_d-6_3#</td>
-    					<td>#value_d-5_3#</td>
-    					<td>#value_d-4_3#</td>
-    					<td>#value_d-3_3#</td>
-    					<td>#value_d-2_3#</td>
-    					<td>#value_d-1_3#</td>
-    					<td>#value_d_3#</td>
-    				</tr>
-    				<tr>
-    					<td><b>Vent</b></td>
-    					<td>#value_d-6_wind#</td>
-    					<td>#value_d-5_wind#</td>
-    					<td>#value_d-4_wind#</td>
-    					<td>#value_d-3_wind#</td>
-    					<td>#value_d-2_wind#</td>
-    					<td>#value_d-1_wind#</td>
-    					<td>#value_d_wind#</td>
-    				</tr>
-    				<tr>
-    					<td><b>Temps</b></td>
-    					<td>#value_d-6_weather#</td>
-    					<td>#value_d-5_weather#</td>
-    					<td>#value_d-4_weather#</td>
-    					<td>#value_d-3_weather#</td>
-    					<td>#value_d-2_weather#</td>
-    					<td>#value_d-1_weather#</td>
-    					<td>#value_d_weather#</td>
-    				</tr>
-    				<tr>
-    					<td><b>Température</b></td>
-    					<td>#value_d-6_temp#</td>
-    					<td>#value_d-5_temp#</td>
-    					<td>#value_d-4_temp#</td>
-    					<td>#value_d-3_temp#</td>
-    					<td>#value_d-2_temp#</td>
-    					<td>#value_d-1_temp#</td>
-    					<td>#value_d_temp#</td>
-    				</tr>
-    			</tbody>
-    		</table>
-    	</div>
+<div id="top_part" style="overflow: hidden;">
+    <div style="float: left; width: 25%; border-right: solid 3px #ff441f; border-bottom: solid 3px #ff441f; padding-left: 3%; padding-bottom: 3%; padding-top: 2%">
+        <!--- Top left --->
+        <h1 style="font-variant: small-caps;">Tableau de bord</h1>
+        <p><b>Identifiant</b>: #connectionId#
+            <br><b>Adresse</b>: #connectionOrigin#
+            <br><b>Timestamp</b>: #connectionTimestamp#</p>
     </div>
-    <div id="bottom_part">
-    	<div style="float: left; width: 50%">
-    		<!--- Bottom left --->
-    		Left
-    	</div>
-    	<div style="float: right; width: 50%; background: linear-gradient(to right, #ff3300 0%, #cc0099 100%)">
-    		<!--- Bottom right --->
-    		<div style="height: 50px; width: 50px; background-color: white; margin: 10px"></div>
-    	</div>
+    <div style="float: right; width: 70%">
+        <!--- Top right --->
+        <table style="width: 93%; height: 100%; margin: 2%">
+            <tbody>
+            <tr style="font-weight: bold" class="border-top">
+                <td style="color: cornflowerblue" class="border-left"><em>Son</em></td>
+                <td>#Stitle_d-6#</td>
+                <td>#Stitle_d-5#</td>
+                <td>#Stitle_d-4#</td>
+                <td>#Stitle_d-3#</td>
+                <td>#Stitle_d-2#</td>
+                <td>#Stitle_d-1#</td>
+                <td class="border-right">#Stitle_d#</td>
+            </tr>
+            <tr>
+                <td class="border-left"><b>Capteur 1</b></td>
+                <td>#value_d-6_1#</td>
+                <td>#value_d-5_1#</td>
+                <td>#value_d-4_1#</td>
+                <td>#value_d-3_1#</td>
+                <td>#value_d-2_1#</td>
+                <td>#value_d-1_1#</td>
+                <td class="border-right">#value_d_1#</td>
+            </tr>
+            <tr>
+                <td class="border-left"><b>Capteur 2</b></td>
+                <td>#value_d-6_2#</td>
+                <td>#value_d-5_2#</td>
+                <td>#value_d-4_2#</td>
+                <td>#value_d-3_2#</td>
+                <td>#value_d-2_2#</td>
+                <td>#value_d-1_2#</td>
+                <td class="border-right">#value_d_2#</td>
+            </tr>
+            <tr>
+                <td class="border-left"><b>Capteur 3</b></td>
+                <td>#value_d-6_3#</td>
+                <td>#value_d-5_3#</td>
+                <td>#value_d-4_3#</td>
+                <td>#value_d-3_3#</td>
+                <td>#value_d-2_3#</td>
+                <td>#value_d-1_3#</td>
+                <td class="border-right">#value_d_3#</td>
+            </tr>
+            <tr style="font-weight: bold" class="border-top">
+                <td style="color: cornflowerblue" class="border-left"><em>Météo</em></td>
+                <td>#Wtitle_d-6#</td>
+                <td>#Wtitle_d-5#</td>
+                <td>#Wtitle_d-4#</td>
+                <td>#Wtitle_d-3#</td>
+                <td>#Wtitle_d-2#</td>
+                <td>#Wtitle_d-1#</td>
+                <td class="border-right">#Wtitle_d#</td>
+            </tr>
+            <tr>
+                <td class="border-left"><b>Vent</b></td>
+                <td>#value_d-6_wind#</td>
+                <td>#value_d-5_wind#</td>
+                <td>#value_d-4_wind#</td>
+                <td>#value_d-3_wind#</td>
+                <td>#value_d-2_wind#</td>
+                <td>#value_d-1_wind#</td>
+                <td class="border-right">#value_d_wind#</td>
+            </tr>
+            <tr>
+                <td class="border-left"><b>Temps</b></td>
+                <td>#value_d-6_weather#</td>
+                <td>#value_d-5_weather#</td>
+                <td>#value_d-4_weather#</td>
+                <td>#value_d-3_weather#</td>
+                <td>#value_d-2_weather#</td>
+                <td>#value_d-1_weather#</td>
+                <td class="border-right">#value_d_weather#</td>
+            </tr>
+            <tr>
+                <td class="border-left"><b>Température</b></td>
+                <td>#value_d-6_temp#</td>
+                <td>#value_d-5_temp#</td>
+                <td>#value_d-4_temp#</td>
+                <td>#value_d-3_temp#</td>
+                <td>#value_d-2_temp#</td>
+                <td>#value_d-1_temp#</td>
+                <td class="border-right">#value_d_temp#</td>
+            </tr>
+            <tr class="border-bottom">
+                <td class="border-left"><b>Nuages</b></td>
+                <td>#value_d-6_clouds#</td>
+                <td>#value_d-5_clouds#</td>
+                <td>#value_d-4_clouds#</td>
+                <td>#value_d-3_clouds#</td>
+                <td>#value_d-2_clouds#</td>
+                <td>#value_d-1_clouds#</td>
+                <td class="border-right">#value_d_clouds#</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
+</div>
+<div id="bottom_part">
+    <div style="float: left; width: 50%">
+        <!--- Bottom left --->
+    </div>
+    <div style="float: right; width: 50%">
+        <!--- Bottom right --->
+    </div>
+</div>
 </body>
 </html>

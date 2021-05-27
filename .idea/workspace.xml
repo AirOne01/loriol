@@ -24,7 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9c89b153-253f-4113-bb91-1e3bf5394c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/periodic.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/periodic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard.html" afterDir="false" />
     </list>
@@ -75,7 +77,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,6 +111,7 @@
       <workItem from="1621867811754" duration="4734000" />
       <workItem from="1621948329280" duration="7750000" />
       <workItem from="1621974877707" duration="6044000" />
+      <workItem from="1622122637983" duration="8368000" />
     </task>
     <servers />
   </component>
@@ -144,10 +147,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1621867787565" />
-    <state x="631" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1621976449656">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1622125029644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1621976449656" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1622125029644" />
+    <state x="631" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1622140750126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="631" y="177" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.121.1024.728@0.0.1920.1040" timestamp="1622140750126" />
     <state x="667" y="76" width="585" height="888" key="find.popup" timestamp="1621873039882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
