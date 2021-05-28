@@ -24,11 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9c89b153-253f-4113-bb91-1e3bf5394c03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/periodic.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/periodic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/weather.json&#10;D:/USER/Desktop/Dossiers/Loriol/loriol/data/instances.json&#10;D:/USER/Desktop/Dossiers/Loriol/loriol/config.json" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.16.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.1" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/nodejs/node.exe" />
@@ -113,6 +110,7 @@
       <workItem from="1621948329280" duration="7750000" />
       <workItem from="1621974877707" duration="6044000" />
       <workItem from="1622122637983" duration="8689000" />
+      <workItem from="1622181658337" duration="2528000" />
     </task>
     <servers />
   </component>
